@@ -1,5 +1,7 @@
 # Mochi-Metrics｜麻糬 Metrics
 
+> **授權：僅限非商業用途，歡迎研究、教學與交流。** 完整條款見 [LICENSE](LICENSE)，適用範圍與第三方例外見 [授權規範](LICENSING.md)。
+
 把電腦的 CPU、記憶體、GPU 與傳輸速率，送到桌上的 ESP8266 小螢幕。對需要觀察主機狀態、又不想一直切換監控視窗的人，Mochi-Metrics 提供獨立顯示器，以及用瀏覽器設定 Wi-Fi、MQTT 與顯示內容的入口。
 
 目前包含可編譯的 ESP-12F 韌體、Go／Python 兩種發送器、設定精靈與狀態面板。下方為儲存庫既有的實機照片（含文字標註）；沒有硬體也能閱讀 [協定範例](docs/protocol/metrics-v2.md) 與執行發送器測試。
@@ -129,6 +131,6 @@ pio test -d apps/firmware -e native
 
 ## 授權與貢獻來源
 
-本專案附 [AGPL-3.0-only](LICENSE) 與 [Commons Clause 條件](LICENSE-COMMONS-CLAUSE.md)，後者明列限制 Sell 的授權條件及 Licensor `JHIH WEI JHAN`；不能簡化成「可自由商用」。本次不變更授權文字。
+作者有權授權的內容現採 [非商用研究授權](LICENSE)，允許非商用研究、教學、修改與交流，不允許商業營運或商業研發。舊 AGPL／Commons Clause 聲明已保留作歷史查核，與第三方例外一併說明於 [LICENSING.md](LICENSING.md)；本次不撤回舊版有效權利。
 
 提交歷史可追溯韌體、Sender 與文件的演進，本頁描述專案成果，不把整合的第三方元件算作獨立原創。依賴來源列於 [PlatformIO 設定](apps/firmware/platformio.ini)、[go.mod](apps/sender/go/go.mod) 與 [Python 設定](apps/sender/python/pyproject.toml)，包含 ArduinoJson、QRCode、ESPAsyncTCP／ESPAsyncWebServer、espMqttClient、Paho MQTT、psutil 與 gopsutil；各自授權另依其上游。既有圖片與內嵌點陣字型未附獨立來源說明，重用前需確認其權利範圍。
